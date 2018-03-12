@@ -1,0 +1,115 @@
+﻿body {
+   clear:both;
+}
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#navmenu {
+    clear: both;
+    margin-top: 140px;
+    padding: 0;
+    list-style-type: none;
+    width: 1000px;
+    position: relative;
+    display: block;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+    border-bottom: 1px solid #73AD21;
+    margin: 0 auto;
+    background-color: orange;
+}
+
+    #navmenu li {
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+          #navmenu li a {
+            display: block;
+            float: left;
+            /*color: black;*/
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0 20px 20px 20px;
+            height: 24px;
+        }
+#navMenu {
+    clear: both;
+    padding: 0;
+    list-style-type: none;
+    width: 1000px;
+    position: relative;
+    display: block;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+    border-bottom: 1px solid #73AD21;
+    margin: 0 auto;
+}
+    #navMenu li {
+        display: block;
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+
+        #navMenu li a {
+            display: block;
+            float: right;
+            color: red;
+            text-decoration: none;
+            /*font-weight: bold;*/
+            padding: 12px 20px 0 20px;
+           /* height: 24px;*/
+        }
+#footer {
+    position: relative;
+    
+    /* negative value of footer height */
+    height: 180px;
+    clear: both;
+    background-color:orange;
+}
+#footer h2,ul, li{
+
+    font-family:'Times New Roman', Times, serif;
+    font-size :24px;
+    font-style:normal;
+    color :darkgoldenrod;
+    margin-left:70px;
+    align-content:center;
+    text-decoration :none;
+}
+/* 
+    This div Footer is inside the footer 
+    which holds the Get to know us in master page
+
+*/
+#divFooter {
+    clear: both;
+    margin-top: -60px;
+    float: right;
+    margin-right: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    font-style: normal;
+    color: darkgoldenrod;
+    align-content: center;
+}
+    #divFooter ul, li, a {
+        color: darkgoldenrod;
+        font-size: 24px;
+        text-decoration: none;
+    }
+table{
+    align-content:center;
+}

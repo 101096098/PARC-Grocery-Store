@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master1.master.cs" Inherits="Assignement1_CARP_COMP2139.Master1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    
+   <link href="Style/style.css" rel="stylesheet" />
+     </head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+                <table class="auto-style2">
+                    <tr>
+                        <td class="auto-style3">
+                            <img alt="" class="auto-style4" src="Images/Grocery%20Store2.jpg" /></td>
+                        <td class="auto-style5"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PARC Grocery Store</h1></td>
+                    </tr>
+                </table>
+                </div>
+ 
+            <div id="navmenu" class="auto-style2">
+                <ul>
+                    <li><a href="Home.aspx" class="auto-style4"> Home </a></li>
+                    <li><a href="information.aspx"> Information </a></li>
+                    <li><a href="#"> FeedBack </a></li>
+                </ul>
+            </div>
+            <div id="navMenu">
+                <ul>
+                    <li><a href="Login.aspx"> Login/Register </a></li>
+                    <li><a href="#"> My List </a></li>
+                </ul>    
+            </div>
+           
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+             <div id="footer" class="auto-style3">
+                 <h2> What We Offer </h2>
+              <ul>
+                  <li>Food</li>
+              </ul>
+                 <div id="divFooter">
+                 <h2> Get To Know Us</h2>
+                 <ul>
+                     <li><a href="#">Contact Us</a></li>
+                     <li><a href="#">FeedBack </a></li>
+                 </ul>
+                     </div>
+            </div>
+    </form>
+</body>
+</html>
