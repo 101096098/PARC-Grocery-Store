@@ -4,57 +4,84 @@
 
 <html>
 <head runat="server">
-    <title>
-        <asp:ContentPlaceHolder ID="head" runat="server">
-        </asp:ContentPlaceHolder>
-    </title>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
     
-   <link href="Style/style.css" rel="stylesheet" />
-     </head>
+    
+    <link rel="stylesheet" type="text/css" href="Style/style.css" />
+  <style type="text/css">
+
+.auto-style1 {
+    width: 100%;
+}
+
+.auto-style2 {
+    width: 314px;
+    height: 251px;
+}
+
+.auto-style3 {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+.auto-style4 {
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    background-color: darkgoldenrod;
+}
+
+p {
+    margin-right: 0in;
+    margin-left: 0in;
+    font-size: 12.0pt;
+    font-family: "Times New Roman",serif;
+}
+</style>
+</head>
 <body>
-    <h1>Hello Renata</h1>
     <form id="form1" runat="server">
-        <div class="wrapper">
-                <table class="auto-style2">
-                    <tr>
-                        <td class="auto-style3">
-                            <img alt="" class="auto-style4" src="Images/Grocery%20Store2.jpg" /></td>
-                        <td class="auto-style5"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PARC Grocery Store</h1></td>
-                    </tr>
-                </table>
-                </div>
- 
-            <div id="navmenu" class="auto-style2">
-                <ul>
-                    <li><a href="Home.aspx" class="auto-style4"> Home </a></li>
-                    <li><a href="information.aspx"> Information </a></li>
-                    <li><a href="#"> FeedBack </a></li>
-                </ul>
-            </div>
-            <div id="navMenu">
-                <ul>
-                    <li><a href="Login.aspx"> Login/Register </a></li>
-                    <li><a href="#"> My List </a></li>
-                </ul>    
-            </div>
-           
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+           <table class="auto-style1">
+               <tr>
+                   <td>
+                   <img alt="" class="auto-style2" src="Images/Grocery%20Store2.jpg" /><span class="auto-style3">PARC Grocery Store</span></td>
+                   <td>&nbsp;</td>
+               </tr>
+            </table>
+           
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style4">Home</td>
+                    <td class="auto-style4">Login</td>
+                    <td class="auto-style4">Information</td>
+                    <td class="auto-style4">About Us</td>
+                    <td class="auto-style4">FeedBack</td>
+                </tr>
+            </table>
         </div>
-             <div id="footer" class="auto-style3">
-                 <h2> What We Offer </h2>
-              <ul>
-                  <li>Food</li>
-              </ul>
-                 <div id="divFooter">
-                 <h2> Get To Know Us</h2>
-                 <ul>
-                     <li><a href="#">Contact Us</a></li>
-                     <li><a href="#">FeedBack </a></li>
-                 </ul>
-                     </div>
-            </div>
-    </form>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+     
+        </asp:ContentPlaceHolder>
+
+        
+   
+         </form>
+    <table class="auto-style1">
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
 </body>
 </html>
