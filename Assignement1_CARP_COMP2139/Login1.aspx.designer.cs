@@ -10,7 +10,7 @@
 namespace Assignement1_CARP_COMP2139 {
     
     
-    public partial class WebForm6 {
+    public partial class WebForm3 {
         
         /// <summary>
         /// Label1 control.
