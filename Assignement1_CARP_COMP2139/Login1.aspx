@@ -1,13 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master1.Master" AutoEventWireup="true" CodeBehind="Login1.aspx.cs" Inherits="Assignement1_CARP_COMP2139.WebForm3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    Login
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
 
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
     <div style="margin-left: auto; align-self:center; margin-left: 100px; margin-right: 100px" class="auto-style2">
     <asp:Panel ID="Panel1" runat="server" CssClass="auto-style1" Height="325px" Width="627px" Direction="LeftToRight">
-        <h1>Sign in</h1>
-        
+        <h1>Sign in</h1>     
     <table class="auto-style1" >
         <tr>
             <td>
@@ -25,7 +23,7 @@
             <td>
                 <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
-                <asp:CustomValidator ID="CustomValidator1" runat="server" ControlToValidate="txtPassword" Display="Dynamic" ErrorMessage="Password must contain string and numbers" OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
+                <asp:CustomValidator ID="CustomValidator1" runat="server" ControlToValidate="txtPassword" Display="Dynamic" ErrorMessage="Password must contain letters and numbers" OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
             </td>
         </tr>
         <tr>
@@ -49,8 +47,7 @@
             
         </tr>
     </table>
-        
-    </asp:Panel>
+         </asp:Panel>
     </div>
         
 </asp:Content>
