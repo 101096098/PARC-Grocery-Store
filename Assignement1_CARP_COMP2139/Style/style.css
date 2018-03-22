@@ -93,7 +93,7 @@
     This div Footer is inside the footer 
     which holds the Get to know us in master page
 
-*/
+
 #divFooter {
     clear: both;
     margin-top: -60px;
@@ -105,11 +105,12 @@
     color: darkgoldenrod;
     align-content: center;
 }
+
     #divFooter ul, li, a {
         color: darkgoldenrod;
         font-size: 24px;
         text-decoration: none;
-    }
+    }*/
 table{
     align-content:center;
 }

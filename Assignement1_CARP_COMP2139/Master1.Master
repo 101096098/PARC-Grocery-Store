@@ -22,24 +22,37 @@
 }
 
 .auto-style3 {
-    font-size: 100px;
+    font-size: 75px;
     font-weight: bold;
     text-align: center;
 }
-.auto-style4 {
-    font-size: xx-large;
-    font-style: italic;
-    font-weight: bold;
-    background-color: darkgoldenrod;
+#footer{
+    background-color: #FFFBD6;
+    font-size: 20px;
+    height:100%;
+    width: 100%;
+    
 }
+  .auto-style6 {
+          background-color: #FFFBD6;
+          font-size: 20px;
+      }
+.auto-style5 {
+          width: 443px;
+          color:#990000;
+          
+     
+}
+.auto-style7 {
+      left: 0px;
+      top: 0px;
+      height: 123px;
+      }
 
-p {
-    margin-right: 0in;
-    margin-left: 0in;
-    font-size: 12.0pt;
-    font-family: "Times New Roman",serif;
+.menu-style{
+    width:100%;
 }
-</style>
+  </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -51,37 +64,58 @@ p {
                    <td>&nbsp;</td>
                </tr>
             </table>
-           
+                                             
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style4">Home</td>
-                    <td class="auto-style4">Login</td>
-                    <td class="auto-style4">Information</td>
-                    <td class="auto-style4">About Us</td>
-                    <td class="auto-style4">FeedBack</td>
+                    <td>
+                                             
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" Orientation="Horizontal" StaticSubMenuIndent="10px" CssClass="menu-style">
+            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#FFFBD6" />
+            <DynamicSelectedStyle BackColor="#FFCC66" />
+            <DynamicItemTemplate>
+                <%# Eval("Text") %>
+            </DynamicItemTemplate>
+            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#FFCC66" />
+                        </asp:Menu>
+                      
+                    </td>
                 </tr>
             </table>
+                      
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+                      
+                
         </div>
            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
      
         </asp:ContentPlaceHolder>
 
-        
-   
-         </form>
-    <table class="auto-style1">
+<div id="footer" class="auto-style7">
+
+
+
+  <table class="auto-style1">
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style5" colspan="2">PARC Team:</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style5"> Abdallahman Habyarimana - 101087205</td >
+            <td class="auto-style5">Peter Budgen - 101110728</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style5">Christopher Haddock - 100667999</td>
+            <td class="auto-style5">Renata Moura - 101096098</td>
         </tr>
     </table>
+
+
+
+</div>
+          
+    </form>
 </body>
 </html>
