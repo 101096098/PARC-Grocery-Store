@@ -94,11 +94,10 @@
     <Content Include="Images\Vegetables\vegetables.jpg" />
     <Content Include="packages.config" />
     <Content Include="information.aspx" />
-    <Content Include="Login1.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="FeedBack.aspx" />
     <Content Include="AboutUs.aspx" />
     <Content Include="Master1.Master" />
-    <Content Include="Login.aspx" />
     <Content Include="Web.sitemap" />
     <Content Include="Register.aspx" />
     <Content Include="Successful.aspx" />
@@ -144,12 +143,12 @@
     <Compile Include="information.aspx.designer.cs">
       <DependentUpon>information.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login1.aspx.cs">
-      <DependentUpon>Login1.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login1.aspx.designer.cs">
-      <DependentUpon>Login1.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="FeedBack.aspx.cs">
       <DependentUpon>FeedBack.aspx</DependentUpon>
@@ -164,9 +163,6 @@
     </Compile>
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
