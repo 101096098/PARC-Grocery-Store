@@ -69,6 +69,8 @@
     <Content Include="Catalogue.aspx" />
     <Content Include="Images\Grocery Store1.jpg" />
     <Content Include="Images\Grocery Store2.jpg" />
+    <Content Include="Images\HomePage_images\bakery.jpg" />
+    <Content Include="Images\HomePage_images\milk and cream.jpg" />
     <Content Include="Images\MilkAndCheese\activia.jpg" />
     <Content Include="Images\MilkAndCheese\brie.jpg" />
     <Content Include="Images\MilkAndCheese\cream cheese 01.jpg" />
@@ -87,7 +89,7 @@
     <Content Include="Images\Vegetables\cauliflower.jpg" />
     <Content Include="Images\Vegetables\lettuce.jpg" />
     <Content Include="Images\Vegetables\tomatoes.jpg" />
-    <Content Include="Images\Vegetables\vegetables.jpg" />
+    <Content Include="Images\HomePage_images\vegetables.jpg" />
     <Content Include="packages.config" />
     <Content Include="information.aspx" />
     <Content Include="Login1.aspx" />
@@ -95,7 +97,9 @@
     <Content Include="AboutUs.aspx" />
     <Content Include="Master1.Master" />
     <Content Include="Login.aspx" />
-    <Content Include="Web.sitemap" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
