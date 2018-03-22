@@ -3,57 +3,54 @@
     Login
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
-    <h1> SIGN IN</h1>
-   
-    <table style="width: 100%; height: 138px; align-content:center">
+
+    <div style="margin-left: auto; align-self:center; margin-left: 100px; margin-right: 100px" class="auto-style2">
+    <asp:Panel ID="Panel1" runat="server" CssClass="auto-style1" Height="325px" Width="627px" Direction="LeftToRight">
+        <h1>Sign in</h1>
+        
+    <table class="auto-style1" >
         <tr>
             <td>
-                <asp:Label ID="Label1" runat="server" Text="Email Address"></asp:Label>
-                <input id="Text1" type="text" style="margin-left: 0px" /></td>
+                <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>
+            </td>
+            <td>
+                <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsername" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+            </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
-                <input id="Password1" type="password" /></td>        
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;</td>
-            
-        </tr>
-        <tr>
-            <td>&nbsp;
-                <input id="chkboxForget" style="width: 23px" type="checkbox" /><asp:Label ID="Label3" runat="server" Text="Remember Me"></asp:Label>
             </td>
-           
-        </tr>
-        <tr>
-            <td>&nbsp;
-                <input id="Submit1" style="width: 189px; margin-left: 0px" type="submit" value="Sign in" /></td>
-           
-        </tr>
-        <tr>
-            <td>&nbsp;
-                <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue">Forgot Password ?</asp:HyperLink>
+            <td>
+                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:CustomValidator ID="CustomValidator1" runat="server" ControlToValidate="txtPassword" Display="Dynamic" ErrorMessage="Password must contain string and numbers" OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
             </td>
-            
         </tr>
         <tr>
-            <td>&nbsp;&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;
-                <asp:Label ID="Label4" runat="server" Text="New To Carp.ca ?"></asp:Label>
-            </td>
-           
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;
-                <input id="Submit2" type="submit" value="Create Account" /></td>
             <td>&nbsp;</td>
+            <td>
+                <asp:Button ID="btnPassword" runat="server" Text="Sign in" Width="101px" OnClick="btnPassword_Click" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:CheckBox ID="CheckBox1" runat="server" Text="Stay Sign in" />
+            </td>
+            <td>
+                <asp:HyperLink ID="HyperLink1" runat="server">Forgot Your Password ?</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="#0033CC" NavigateUrl="~/Register.aspx">CREATE ACCOUNT</asp:HyperLink>
+            </td>
+            
         </tr>
     </table>
+        
+    </asp:Panel>
+    </div>
         
 </asp:Content>
