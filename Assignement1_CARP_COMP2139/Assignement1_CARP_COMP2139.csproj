@@ -66,10 +66,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Dairy.mdf" />
+    <Content Include="App_Data\Dairy_log.ldf">
+      <DependentUpon>Dairy.mdf</DependentUpon>
+    </Content>
     <Content Include="Catalogue.aspx" />
     <Content Include="Images\Grocery Store1.jpg" />
     <Content Include="Images\Grocery Store2.jpg" />
-    <Content Include="Images\MilkAndCheese\activia.jpg" />
+    <Content Include="App_Data\activia.jpg" />
     <Content Include="Images\MilkAndCheese\brie.jpg" />
     <Content Include="Images\MilkAndCheese\cream cheese 01.jpg" />
     <Content Include="Images\MilkAndCheese\cream cheese 02.jpg" />
