@@ -18,10 +18,13 @@
             </p>
         <p class="auto-style9">Here at PARC Grocery we believe the most important aspect of a website is making the user experience as pleasurable as possible. 
         </p>
-        <p class="auto-style9">Our website is designed to make navigation a breeze and our simple layout allows users to easily create accounts, navigate our catalogue of items and purchase them.
+        <p class="auto-style9">Our website is designed to make navigation a breeze and our simple layout allows users to easily create accounts, navigate our 
+            catalogue of items and purchase them with only a few clicks of a mouse.
+            <br/>
+            <br/>
+            <a href="https://www.cfa-fca.ca">To read about the farms where our food is sourced from click here</a>
         </p>
-        <br />
-        https://cfccanada.ca/</div>
+        </div>
 
 
 </asp:Content>

@@ -29,15 +29,25 @@ input[type=button] {
 button:hover {
   opacity:1;
 }
+        .auto-style9 {
+            width: 58%;
+            margin-right: 0;
+        }
+        .auto-style10 {
+            width: 34%;
+        }
+        .auto-style11 {
+            width: 88%;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="margin-left: auto; align-self:center; margin-left: 100px; margin-right: 100px" class="auto-style2">
+    <div>
         <h1>Register</h1>
          
-        <table class="auto-style1">
+        <table class="auto-style10">
             <tr>
-                <td><input type="text" placeholder="FirstName" ></td>
+                <td><input type="text" placeholder="FirstName" class="auto-style9" ></td>
             </tr>
             <tr>
                 <td><input type="text" placeholder="LastName"></td>
@@ -56,7 +66,7 @@ button:hover {
                 <td><input type="text" placeholder="Address" /></td>
             </tr>
             <tr>
-                <td><input type="button" value="Register" name="btnRegister"/></td>
+                <td><input type="button" value="Register" name="btnRegister" class="auto-style11"/></td>
             </tr>
         </table>
         </div>
