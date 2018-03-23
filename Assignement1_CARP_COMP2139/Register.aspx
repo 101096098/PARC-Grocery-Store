@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master1.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Assignement1_CARP_COMP2139.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
+ <!--  <style type="text/css">
        /* Full-width input fields */
   input[type=text], input[type=password] {
   width: 100%;
@@ -22,21 +22,38 @@ input[type=button] {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
   opacity: 0.9;
 }
 
 button:hover {
   opacity:1;
 }
+
+        .reg_form {
+            margin-left: auto;
+            align-self: center;
+            margin-left: 500px;
+            margin-right: 100px;
+        }
+         .reg_form th{
+             font-size: 40px;
+         }
+         .reg_form td{
+             font-size:30px
+         }
     </style>
+     -->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="margin-left: auto; align-self:center; margin-left: 100px; margin-right: 100px" class="auto-style2">
-        <h1>Register</h1>
+  
+       
          
-        <table class="auto-style1">
-            <tr>
+        <table class="reg_form">
+              <tr>
+                  <th> Register</th>
+              </tr> 
+            <tr>             
                 <td><input type="text" placeholder="FirstName" ></td>
             </tr>
             <tr>
@@ -59,5 +76,5 @@ button:hover {
                 <td><input type="button" value="Register" name="btnRegister"/></td>
             </tr>
         </table>
-        </div>
+    
 </asp:Content>

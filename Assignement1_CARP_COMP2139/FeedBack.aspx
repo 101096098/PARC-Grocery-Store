@@ -1,14 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master1.Master" AutoEventWireup="true" CodeBehind="FeedBack.aspx.cs" Inherits="Assignement1_CARP_COMP2139.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style8 {
-            width: 790px;
-            height: 94px;
-        }
-        .auto-style9 {
-            margin-top: 8px;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     What is the nature of your complaint?<br />

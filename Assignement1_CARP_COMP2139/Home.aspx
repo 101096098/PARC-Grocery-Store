@@ -39,7 +39,7 @@
             width: 191px;
             height: 218px;
         }
-     .auto-style14 {
+     .img14 {
             width: 190px;
             height: 176px;
         }
@@ -65,13 +65,13 @@
             width: auto;
             font-size:32px;
         }
-        p.MsoNormal
+.MsoNormal
 	{margin-top:0in;
 	margin-right:0in;
 	margin-bottom:8.0pt;
 	margin-left:0in;
 	line-height:107%;
-	font-size:11.0pt;
+	font-size: 25px;
 	font-family:"Calibri",sans-serif;
 	}
 </style>
@@ -79,14 +79,10 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
-
-
      <br />
-
-
      <table class="auto-style1">
             <tr>
-                <td colspan="6" class ="auto-style20">
+                <td colspan="6" class ="MsoNormal">
                     <br />
                    PARC is an online Marketplace in which customers can view a wide range of products, sorted in their appropriate categories with accompanying images. 
                     <br />
@@ -116,7 +112,7 @@
             </tr>
             <tr>
                 <td>
-                    <img alt="yogurt1" class="auto-style14" src="Images/MilkAndCheese/activia.jpg" /><br />
+                    <img alt="yogurt1" class="img14" src="Images/MilkAndCheese/activia.jpg" /><br />
                     <asp:Label ID="Label1" runat="server" Text="Activia Yogurt"></asp:Label>
                     <br />
                     <asp:Label ID="Label2" runat="server" Text="$2.99"></asp:Label>

@@ -1,14 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master1.Master" AutoEventWireup="true" CodeBehind="information.aspx.cs" Inherits="Assignement1_CARP_COMP2139.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
+   <!-- <style type="text/css">
         .auto-style9 {
             width: 1662px;
             font-size: 25px;
         }
-    </style>
+    </style>-->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div>
+
         <h2>Information about the PARC Grocery Store</h2>
         <p class="auto-style9">What started as a humble idea to bring affordable, healthy food to people evolved into our idea for an online grocery store that 
             also delivers food right to your door.</p>
@@ -21,7 +21,8 @@
         <p class="auto-style9">Our website is designed to make navigation a breeze and our simple layout allows users to easily create accounts, navigate our catalogue of items and purchase them.
         </p>
         <br />
-        https://cfccanada.ca/</div>
+      <h2> Externals Links:</h2>
+      <p class="auto-style9"> https://www.canada.ca/en/health-canada/services/canada-food-guides.html</p>
 
 
 </asp:Content>

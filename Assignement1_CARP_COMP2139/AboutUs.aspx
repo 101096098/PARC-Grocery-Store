@@ -9,7 +9,7 @@
 	margin-left:0in;
 	line-height:107%;
 	font-family:"Calibri",sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color:black;
 	}
     </style>
