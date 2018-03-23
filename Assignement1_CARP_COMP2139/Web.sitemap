@@ -6,6 +6,6 @@
     <siteMapNode url="~/information.aspx" title="Information"  description="Information Page" />
     <siteMapNode url="~/FeedBack.aspx" title="Feedback"  description="Feedback PAge" />
     <siteMapNode url="~/AboutUS.aspx" title="About US"  description="About Us page" />
-    <siteMapNode url="~/Register" title="Register" description="Register Page"/>
+    <siteMapNode url="~/Register.aspx" title="Register" description="Register Page"/>
    </siteMapNode>
 </siteMap>
