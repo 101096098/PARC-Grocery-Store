@@ -30,5 +30,10 @@ namespace Assignement1_CARP_COMP2139
                 Response.Redirect("~/Successful.aspx");
             }
         }
+
+        protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

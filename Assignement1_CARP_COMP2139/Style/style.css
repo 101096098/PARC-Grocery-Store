@@ -89,6 +89,10 @@
     align-content:center;
     text-decoration :none;
 }
+
+td {
+    font-size: 24px;
+}
 /* 
     This div Footer is inside the footer 
     which holds the Get to know us in master page
