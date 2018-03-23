@@ -74,7 +74,10 @@
 	font-size:11.0pt;
 	font-family:"Calibri",sans-serif;
 	}
-</style>
+        .auto-style21 {
+            font-size: x-large;
+        }
+    </style>
 
 </asp:Content>
 
@@ -88,7 +91,7 @@
             <tr>
                 <td colspan="6" class ="auto-style20">
                     <br />
-                   PARC is an online Marketplace in which customers can view a wide range of products, sorted in their appropriate categories with accompanying images. 
+                    <span class="auto-style21">PARC is an online Marketplace in which customers can view a wide range of products, sorted in their appropriate categories with accompanying images. 
                     <br />
                    <br />
                     Customers will be able to browse these products, add them to their cart, edit them as necessary and ultimately make a purchase when they are ready. 
@@ -112,7 +115,7 @@
                     Shop online and enjoy the promotions and deals with the guarantee of good quality products.
                     <br />
                     <br />
-                    Some of our products:</td>
+                    Some of our products:</span></td>
             </tr>
             <tr>
                 <td>
