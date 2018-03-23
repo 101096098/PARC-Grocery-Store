@@ -78,7 +78,7 @@
         </asp:ContentPlaceHolder>
 
 <div id="footer">
-   
+  </div> 
 
  </form>
 </body>
