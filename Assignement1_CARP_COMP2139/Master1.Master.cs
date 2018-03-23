@@ -13,5 +13,10 @@ namespace Assignement1_CARP_COMP2139
         {
 
         }
+
+        protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
+        {
+
+        }
     }
 }

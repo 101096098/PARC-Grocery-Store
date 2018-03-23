@@ -54,7 +54,7 @@
                                              
          
                                              
-        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="1.5em" ForeColor="#990000" Orientation="Horizontal" StaticSubMenuIndent="10px" CssClass="menu-style">
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="1.5em" ForeColor="#990000" Orientation="Horizontal" StaticSubMenuIndent="10px" CssClass="menu-style" OnMenuItemClick="Menu1_MenuItemClick">
             <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
             <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
             <DynamicMenuStyle BackColor="#FFFBD6" />
