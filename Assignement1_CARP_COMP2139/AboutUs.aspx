@@ -20,25 +20,46 @@
 
      <table class="MsoNormal">
         <tr>
-            <td class="MsoNormal">PARC Team: Tester here now</td>
-        </tr>
-        <tr>
-            <td class="MsoNormal">
-                Abdallahman is a programmer, studying development in the last 11 years in robot programming.
+            <td class="MsoNormal">Meet the PARC Team:<br />
             </td>
         </tr>
         <tr>
-            <td>&nbsp;</td >
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
+            <td></td>
         </tr>
         <tr>
             <td class="MsoNormal">
-                 Renata is an Electrical Engineer and a Project Manager. Working for 21 years at Telecommunication field and now studying to work in IT area.
+                Abdallahman is a programmer with 11 years of study devoted to robotic programming.
             </td>
         </tr>
-    </table>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td class ="MsoNormal">
+                Peter is an aspiriring programmer with interests focused on criminal justice and video game technology.
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="MsoNormal">
+                 Renata is an electrical engineer and a project manager. With 21 years experience 
+                working within the telecommunications field, she now aspires to work in IT.
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="MsoNormal">
+                 Chris is a go-getting programmer who loves walks in the rain, written exams and asp.net
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+        </tr>
+        </table>
 
 
 
