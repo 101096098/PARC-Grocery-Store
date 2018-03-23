@@ -71,6 +71,7 @@
       <DependentUpon>Dairy.mdf</DependentUpon>
     </Content>
     <Content Include="Catalogue.aspx" />
+    <Content Include="FeedBackSubmitted.aspx" />
     <Content Include="Images\Grocery Store1.jpg" />
     <Content Include="Images\Grocery Store2.jpg" />
     <Content Include="App_Data\activia.jpg" />
@@ -124,6 +125,13 @@
     </Compile>
     <Compile Include="Catalogue.aspx.designer.cs">
       <DependentUpon>Catalogue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBackSubmitted.aspx.cs">
+      <DependentUpon>FeedBackSubmitted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedBackSubmitted.aspx.designer.cs">
+      <DependentUpon>FeedBackSubmitted.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master1.Master.cs">
       <DependentUpon>Master1.Master</DependentUpon>
