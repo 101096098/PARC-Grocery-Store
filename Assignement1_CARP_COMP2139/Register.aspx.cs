@@ -26,7 +26,7 @@ namespace Assignement1_CARP_COMP2139
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Server.Transfer("login.aspx");
+            Server.Transfer("Successful.aspx");
         }
     }
 }
