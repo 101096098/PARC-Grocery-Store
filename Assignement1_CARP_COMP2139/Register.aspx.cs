@@ -13,5 +13,20 @@ namespace Assignement1_CARP_COMP2139
         {
 
         }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("login.aspx");
+        }
     }
 }

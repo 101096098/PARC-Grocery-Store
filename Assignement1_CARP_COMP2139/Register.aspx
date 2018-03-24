@@ -30,44 +30,106 @@ button:hover {
   opacity:1;
 }
         .auto-style9 {
-            width: 58%;
-            margin-right: 0;
-        }
-        .auto-style10 {
-            width: 34%;
+            width: 616px;
+            height: 525px;
         }
         .auto-style11 {
-            width: 88%;
+            height: 75px;
+        }
+        .auto-style12 {
+            height: 75px;
+            width: 282px;
+        }
+        .auto-style13 {
+            width: 282px;
+        }
+        .auto-style14 {
+            margin-left: 39px;
+        }
+        .auto-style15 {
+            width: 229%;
+            height: 357px;
+        }
+        .auto-style16 {
+            width: 282px;
+            height: 77px;
+        }
+        .auto-style17 {
+            height: 77px;
+        }
+        .auto-style18 {
+            width: 282px;
+            height: 7px;
+        }
+        .auto-style19 {
+            height: 7px;
+        }
+        .auto-style20 {
+            height: 11px;
+            width: 282px;
+        }
+        .auto-style21 {
+            height: 11px;
+        }
+        .auto-style22 {
+            text-decoration: underline;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div>
-        <h1>Register</h1>
-         
-        <table class="auto-style10">
+    <div class="auto-style9">
+        <h1 class="auto-style22">Register New Account</h1>
+        <table class="auto-style15">
             <tr>
-                <td><input type="text" placeholder="FirstName" class="auto-style9" ></td>
+                <td class="auto-style20">
+                    User name</td>
+                <td class="auto-style21">
+                </td>
             </tr>
             <tr>
-                <td><input type="text" placeholder="LastName"></td>
+                <td class="auto-style12">
+                    <asp:TextBox ID="tbUsername" runat="server" Height="16px"></asp:TextBox>
+                </td>
+                <td class="auto-style11">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbUsername" Display="Dynamic" ErrorMessage="This field is required"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
-                <td><input type="text" placeholder="Email Address"></td>
+                <td class="auto-style13">
+                    Email</td>
+                <td>
+                    &nbsp;</td>
             </tr>
             <tr>
-                <td><input type="password" placeholder="Password"></td>
+                <td class="auto-style13">
+                    <asp:TextBox ID="tbEmail" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbEmail" Display="Dynamic" ErrorMessage="This field is required"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
-                <td><input type="password" placeholder="Comfirm Password"></td>
+                <td class="auto-style18">
+                    Password</td>
+                <td class="auto-style19">
+                </td>
             </tr>
-            
             <tr>
-                <td><input type="text" placeholder="Address" /></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="Register" name="btnRegister" class="auto-style11"/></td>
+                <td class="auto-style16">
+                    <asp:TextBox ID="tbPassword" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style17">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tbPassword" Display="Dynamic" ErrorMessage="This field is required"></asp:RequiredFieldValidator>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbPassword" Display="Dynamic" ErrorMessage="8-16 characters, starts with a letter, has at least one number and symbol" ValidationExpression="^[A-Za-z](?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&amp;])[A-Za-z\d$@$!%*?&amp;]{8,16}"></asp:RegularExpressionValidator>
+                </td>
             </tr>
         </table>
+        <asp:Button ID="Button1" runat="server" CssClass="auto-style14" Text="Register Account" Width="148px" OnClick="Button1_Click" />
         </div>
+
+
 </asp:Content>

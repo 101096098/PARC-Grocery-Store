@@ -35,5 +35,15 @@ namespace Assignement1_CARP_COMP2139
         {
 
         }
+
+        protected void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void CustomValidator2_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            
+        }
     }
 }

@@ -18,7 +18,7 @@
         <asp:ListItem>3</asp:ListItem>
         <asp:ListItem>4</asp:ListItem>
         <asp:ListItem>5</asp:ListItem>
-    </asp:RadioButtonList>
+</asp:RadioButtonList>
     <br />
     <span class="auto-style10">What can we do to fix it?</span><br />
 &nbsp;<textarea id="TextArea1" class="auto-style8" name="S1"></textarea><br />
