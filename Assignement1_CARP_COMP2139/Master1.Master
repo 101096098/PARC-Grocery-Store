@@ -51,11 +51,10 @@
                    <td><span class="auto-style3">PARC Grocery Store</span></td>
                </tr>
             </table>
-                                            
-        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" BackColor="#FFFBD6" 
-            DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="1.5em" ForeColor="#990000" 
-            Orientation="Horizontal" StaticSubMenuIndent="10px" CssClass="menu-style" OnMenuItemClick="Menu1_MenuItemClick">
-           
+                                             
+         
+                                             
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="1.5em" ForeColor="#990000" Orientation="Horizontal" StaticSubMenuIndent="10px" CssClass="menu-style" OnMenuItemClick="Menu1_MenuItemClick">
             <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
             <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
             <DynamicMenuStyle BackColor="#FFFBD6" />
@@ -66,8 +65,9 @@
             <StaticHoverStyle BackColor="#990000" ForeColor="White" />
             <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
             <StaticSelectedStyle BackColor="#FFCC66" />
-          </asp:Menu>
-           
+                        </asp:Menu>
+                      
+          
                       
         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
                       
@@ -78,14 +78,18 @@
         </asp:ContentPlaceHolder>
 
 <div id="footer">
-    PARC Team:<br />
-    Abdallahman Habyarimana - 101087205
+    Copyright <script type="text/javascript">
+                  var d = new Date()
+                  document.write(d.getFullYear())
+    </script> © PARC Grocery 
     <br />
-    Christopher Haddock - 100667999
     <br />
-    Peter Budgen - 101110728
+    | Abdallahman Habyarimana 101087205 | Peter Budgen 101110728&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br />
+    | Renata Moura&nbsp; 101096098&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Christopher Haddock 100667999&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br />
     <br />
-    Renata Moura - 101096098</div> 
+&nbsp;ALL RIGHTS RESERVED<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+        </div> 
 
  </form>
 </body>

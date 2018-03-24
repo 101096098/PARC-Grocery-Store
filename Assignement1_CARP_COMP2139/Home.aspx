@@ -39,7 +39,7 @@
             width: 191px;
             height: 218px;
         }
-     .img14 {
+     .auto-style14 {
             width: 190px;
             height: 176px;
         }
@@ -65,26 +65,33 @@
             width: auto;
             font-size:32px;
         }
-.MsoNormal
+        p.MsoNormal
 	{margin-top:0in;
 	margin-right:0in;
 	margin-bottom:8.0pt;
 	margin-left:0in;
 	line-height:107%;
-	font-size: 25px;
+	font-size:11.0pt;
 	font-family:"Calibri",sans-serif;
 	}
-</style>
+        .auto-style21 {
+            font-size: x-large;
+        }
+    </style>
 
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
+
+
      <br />
+
+    
      <table class="auto-style1">
             <tr>
-                <td colspan="6" class ="MsoNormal">
+                <td colspan="6" class ="auto-style20">
                     <br />
-                   PARC is an online Marketplace in which customers can view a wide range of products, sorted in their appropriate categories with accompanying images. 
+                    <span class="auto-style21">PARC is an online Marketplace in which customers can view a wide range of products, sorted in their appropriate categories with accompanying images. 
                     <br />
                    <br />
                     Customers will be able to browse these products, add them to their cart, edit them as necessary and ultimately make a purchase when they are ready. 
@@ -108,11 +115,11 @@
                     Shop online and enjoy the promotions and deals with the guarantee of good quality products.
                     <br />
                     <br />
-                    Some of our products:</td>
+                    Some of our products:</span></td>
             </tr>
             <tr>
                 <td>
-                    <img alt="yogurt1" class="img14" src="Images/MilkAndCheese/activia.jpg" /><br />
+                    <img alt="yogurt1" class="auto-style14" src="Images/MilkAndCheese/activia.jpg" /><br />
                     <asp:Label ID="Label1" runat="server" Text="Activia Yogurt"></asp:Label>
                     <br />
                     <asp:Label ID="Label2" runat="server" Text="$2.99"></asp:Label>

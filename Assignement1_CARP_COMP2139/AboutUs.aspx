@@ -12,6 +12,39 @@
     font-size: 25px;
     color:black;
 	}
+    .auto-style9 {
+        margin-top: 0in;
+        margin-right: 0in;
+        margin-bottom: 8.0pt;
+        margin-left: 0in;
+        line-height: 107%;
+        font-family: "Calibri",sans-serif;
+        font-size: 30px;
+        color: black;
+        width: 931px;
+    }
+    .auto-style10 {
+        width: 931px;
+    }
+    .auto-style11 {
+        width: 931px;
+        height: 8px;
+    }
+        .auto-style12 {
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 8.0pt;
+            margin-left: 0in;
+            line-height: 107%;
+            font-family: "Calibri",sans-serif;
+            font-size: x-large;
+            color: black;
+            width: 931px;
+        }
+        .auto-style13 {
+            width: 931px;
+            font-size: x-large;
+        }
     </style>
 </asp:Content>
 
@@ -20,25 +53,46 @@
 
      <table class="MsoNormal">
         <tr>
-            <td class="MsoNormal">PARC Team: Tester here now</td>
-        </tr>
-        <tr>
-            <td class="MsoNormal">
-                Abdallahman is a programmer, studying development in the last 11 years in robot programming.
+            <td class="auto-style9"><strong>Meet the PARC Team:</strong><br />
             </td>
         </tr>
         <tr>
-            <td>&nbsp;</td >
+            <td class="auto-style11"></td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="MsoNormal">
-                 Renata is an Electrical Engineer and a Project Manager. Working for 21 years at Telecommunication field and now studying to work in IT area.
+            <td class="auto-style12">
+                Abdallahman is a programmer with 11 years of study devoted to robotic programming.
             </td>
         </tr>
-    </table>
+        <tr>
+            <td class="auto-style13">-----------------------------------------------------------------------------------------------------</td>
+        </tr>
+        <tr>
+            <td class ="auto-style12">
+                Peter is an aspiriring programmer with interests focused on criminal justice and video game technology.
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style13">-----------------------------------------------------------------------------------------------------</td>
+        </tr>
+        <tr>
+            <td class="auto-style12">
+                 Renata is an electrical engineer and a project manager. With 21 years experience 
+                working within the telecommunications field, she now aspires to work in IT.
+            </td>
+        </tr>
+         <tr>
+            <td class="auto-style13">-----------------------------------------------------------------------------------------------------</td>
+        </tr>
+        <tr>
+            <td class="auto-style12">
+                 Chris is a go-getting programmer who loves walks in the rain, written exams and asp.net
+            </td>
+        </tr>
+         <tr>
+            <td class="auto-style10">-----------------------------------------------------------------------------------------------------</td>
+        </tr>
+        </table>
 
 
 
