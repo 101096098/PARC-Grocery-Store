@@ -29,18 +29,12 @@ input[type=button] {
 button:hover {
   opacity:1;
 }
-        .auto-style9 {
-            width: 616px;
-            height: 525px;
-        }
+       
         .auto-style11 {
-            height: 75px;
+            height: 38px;
         }
         .auto-style12 {
-            height: 75px;
-            width: 282px;
-        }
-        .auto-style13 {
+            height: 38px;
             width: 282px;
         }
         .auto-style14 {
@@ -73,7 +67,22 @@ button:hover {
         }
         .auto-style22 {
             text-decoration: underline;
-        }
+        font-size: medium;
+    }
+    .auto-style23 {
+        width: 282px;
+        height: 23px;
+    }
+    .auto-style24 {
+        height: 23px;
+    }
+    .auto-style25 {
+        height: 3px;
+        width: 282px;
+    }
+    .auto-style26 {
+        height: 3px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -98,16 +107,16 @@ button:hover {
                 </td>
             </tr>
             <tr>
-                <td class="auto-style13">
+                <td class="auto-style25">
                     Email</td>
-                <td>
-                    &nbsp;</td>
+                <td class="auto-style26">
+                    </td>
             </tr>
             <tr>
-                <td class="auto-style13">
+                <td class="auto-style23">
                     <asp:TextBox ID="tbEmail" runat="server"></asp:TextBox>
                 </td>
-                <td>
+                <td class="auto-style24">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbEmail" Display="Dynamic" ErrorMessage="This field is required"></asp:RequiredFieldValidator>
                 </td>
