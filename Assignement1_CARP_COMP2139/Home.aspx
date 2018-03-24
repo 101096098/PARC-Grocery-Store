@@ -77,6 +77,16 @@
         .auto-style21 {
             font-size: x-large;
         }
+.homepage {
+            font-size:20px;
+            padding: 5px;
+            left: 65px;
+            margin-left: 50px;
+            border-bottom-width: 5Px;
+            margin-top: 50px;
+            border-top-width: 15px;
+            border-left-width: 5px;
+        }
     </style>
 
 </asp:Content>
@@ -84,39 +94,29 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
 
 
-     <br />
-
-    
-     <table class="auto-style1">
-            <tr>
-                <td colspan="6" class ="auto-style20">
-                    <br />
-                    <span class="auto-style21">PARC is an online Marketplace in which customers can view a wide range of products, sorted in their appropriate categories with accompanying images. 
-                    <br />
-                   <br />
-                    Customers will be able to browse these products, add them to their cart, edit them as necessary and ultimately make a purchase when they are ready. 
-                    <br />
-                    <br />
-                    We will calculate their total and estimated shipping before purchase.<br />
-                    <br />
-                    PARC introduce an innovative retailing concepts to online shop.
-                    It’s a selection of products that compare favorably to national brands, at a lower price.  
-                    <br />
-                    <br />
-                    Our Grocery is a synonymous with high quality and exclusive product with market trends. 
-                    We are looking to find ways to bring customers closer to their favorite products. 
-                    <br />
-                    <br />
-                    We pride in taking care of our customers by providing service and offering a convenient to our customers.
-                    <br />
-                    <br />
-                    Build your cart from any time, using our website or mobile app.
-                    <br />
-                    Shop online and enjoy the promotions and deals with the guarantee of good quality products.
-                    <br />
-                    <br />
-                    Some of our products:</span></td>
-            </tr>
+<div class="homepage"">
+    PARC is an online Marketplace in which customers can view a wide range of products, sorted in their appropriate categories with accompanying images. 
+    <br /> <br />
+    Customers will be able to browse these products, add them to their cart, edit them as necessary and ultimately make a purchase when they are ready. 
+    <br /> <br />
+    We will calculate their total and estimated shipping before purchase.<br />
+    <br />
+    PARC introduce an innovative retailing concepts to online shop.
+    It’s a selection of products that compare favorably to national brands, at a lower price.  
+    <br /> <br />
+    Our Grocery is a synonymous with high quality and exclusive product with market trends. 
+    We are looking to find ways to bring customers closer to their favorite products. 
+    <br /> <br />
+    We pride in taking care of our customers by providing service and offering a convenient to our customers.
+    <br /> <br />
+    Build your cart from any time, using our website or mobile app.
+    <br />
+    Shop online and enjoy the promotions and deals with the guarantee of good quality products.
+    <br />  <br />
+  Some of our products:
+</div>
+<div>
+    <table class="auto-style1">
             <tr>
                 <td>
                     <img alt="yogurt1" class="auto-style14" src="Images/MilkAndCheese/activia.jpg" /><br />
@@ -302,5 +302,6 @@
                 </td>
             </tr>
             </table>
-   
+    <br /><br />
+</div>   
     </asp:Content>
