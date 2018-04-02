@@ -70,11 +70,27 @@
     <Content Include="App_Data\Dairy_log.ldf">
       <DependentUpon>Dairy.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\PARC.mdf" />
+    <Content Include="App_Data\PARC_log.ldf">
+      <DependentUpon>PARC.mdf</DependentUpon>
+    </Content>
     <Content Include="Catalogue.aspx" />
     <Content Include="FeedBackSubmitted.aspx" />
+    <Content Include="Images\bakey\bagel.jpg" />
+    <Content Include="Images\bakey\bread 01.jpg" />
+    <Content Include="Images\bakey\bread.jpg" />
+    <Content Include="Images\bakey\mini muffins.jpg" />
+    <Content Include="Images\bakey\muffins.jpg" />
+    <Content Include="Images\bakey\tortilla 01.jpg" />
+    <Content Include="Images\bakey\tortilla.jpg" />
+    <Content Include="Images\fruits\apple.jpg" />
+    <Content Include="Images\fruits\mango.jpg" />
+    <Content Include="Images\fruits\orange.jpg" />
+    <Content Include="Images\fruits\peach.jpg" />
+    <Content Include="Images\fruits\pear.jpg" />
+    <Content Include="Images\fruits\strawberries.jpg" />
     <Content Include="Images\Grocery Store1.jpg" />
     <Content Include="Images\Grocery Store2.jpg" />
-    <Content Include="App_Data\activia.jpg" />
     <Content Include="Images\HomePage_images\bakery.jpg" />
     <Content Include="Images\HomePage_images\milk and cream.jpg" />
     <Content Include="Images\MilkAndCheese\activia.jpg" />
