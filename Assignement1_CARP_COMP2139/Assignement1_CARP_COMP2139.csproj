@@ -75,6 +75,7 @@
       <DependentUpon>PARC.mdf</DependentUpon>
     </Content>
     <Content Include="Catalogue.aspx" />
+    <Content Include="Css\Cart.css" />
     <Content Include="FeedBackSubmitted.aspx" />
     <Content Include="Images\bakey\bagel.jpg" />
     <Content Include="Images\bakey\bread 01.jpg" />
@@ -123,6 +124,7 @@
     <Content Include="Web.sitemap">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Cart.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -136,6 +138,16 @@
     <Content Include="Home.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\CartItem.cs" />
+    <Content Include="App_Code\Product.cs" />
+    <Compile Include="App_Code\CartItemList.cs" />
     <Compile Include="Catalogue.aspx.cs">
       <DependentUpon>Catalogue.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
