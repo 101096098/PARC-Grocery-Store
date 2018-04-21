@@ -145,9 +145,6 @@
     <Compile Include="Cart.aspx.designer.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\CartItem.cs" />
-    <Content Include="App_Code\Product.cs" />
-    <Compile Include="App_Code\CartItemList.cs" />
     <Compile Include="Catalogue.aspx.cs">
       <DependentUpon>Catalogue.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
