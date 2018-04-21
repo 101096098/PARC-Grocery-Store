@@ -78,10 +78,7 @@
         .auto-style19 {
             width: 52px;
         }
-        .auto-style20 {
-            margin-top: 0px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -364,26 +361,16 @@
             </tr>
         </table>
         <div>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DairyString %>" SelectCommand="SELECT * FROM [Table]"></asp:SqlDataSource>
-            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="auto-style20" DataKeyNames="ItemID" DataSourceID="SqlDataSource1">
-                <Columns>
-                    <asp:BoundField DataField="ItemName" HeaderText="ItemName" SortExpression="ItemName" />
-                    <asp:BoundField DataField="ItemCost" HeaderText="ItemCost" SortExpression="ItemCost" />
-                    <asp:BoundField DataField="ItemQuantity" HeaderText="ItemQuantity" SortExpression="ItemQuantity" />
-                    <asp:CommandField ButtonType="Button" ShowEditButton="True" />
-                    <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
-                </Columns>
-                <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
-                <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
-                <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
-                <RowStyle BackColor="White" ForeColor="#003399" />
-                <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
-                <SortedAscendingCellStyle BackColor="#EDF6F6" />
-                <SortedAscendingHeaderStyle BackColor="#0D4AC4" />
-                <SortedDescendingCellStyle BackColor="#D6DFDF" />
-                <SortedDescendingHeaderStyle BackColor="#002876" />
-            </asp:GridView>
         </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Bakery]"></asp:SqlDataSource>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="94px" Width="627px">
+            <Columns>
+                <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
+                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
+                <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
+            </Columns>
+        </asp:GridView>
     </form>
 </body>
 </html>
