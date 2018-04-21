@@ -58,10 +58,6 @@
      .auto-style19 {
             width: 52px;
         }
-     .auto-style20 {
-            width: auto;
-            font-size:32px;
-        }
         p.MsoNormal
 	{margin-top:0in;
 	margin-right:0in;
@@ -71,10 +67,7 @@
 	font-size:11.0pt;
 	font-family:"Calibri",sans-serif;
 	}
-        .auto-style21 {
-            font-size: x-large;
-        }
-.homepage {
+        .homepage {
             font-size:20px;
             padding: 5px;
             left: 65px;
@@ -92,6 +85,8 @@
 
 
 <div class="homepage"">
+    Test<br />
+    <br />
     PARC is an online Marketplace in which customers can view a wide range of products, sorted in their appropriate categories with accompanying images. 
     <br /> <br />
     Customers will be able to browse these products, add them to their cart, edit them as necessary and ultimately make a purchase when they are ready. 
