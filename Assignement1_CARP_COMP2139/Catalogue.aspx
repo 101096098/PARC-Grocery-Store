@@ -37,7 +37,10 @@
             width: 193px;
             height: 211px;
         }
-        
+        .auto-style9 {
+            width: 232px;
+            height: 214px;
+        }
         .auto-style10 {
             width: 102px;
         }
