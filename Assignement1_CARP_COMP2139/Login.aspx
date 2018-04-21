@@ -18,7 +18,7 @@
                 <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txtUsername" runat="server" OnTextChanged="txtUsername_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsername" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                 <asp:CustomValidator ID="CustomValidator2" runat="server" ControlToValidate="txtUsername" Display="Dynamic" ErrorMessage="CustomValidator" OnServerValidate="CustomValidator2_ServerValidate"></asp:CustomValidator>
             </td>
@@ -36,7 +36,7 @@
         <tr>
             <td>&nbsp;</td>
             <td>
-                <asp:Button ID="btnPassword" runat="server" Text="Sign in" Width="101px" OnClick="btnPassword_Click" />
+                <asp:Button ID="btnPassword" runat="server" Text="Sign in" Width="101px" OnClick="btnPassword_Click"/>
             </td>
         </tr>
         <tr>

@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Assignement1_CARP_COMP2139.App_Code;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace Assignement1_CARP_COMP2139
 {
@@ -24,9 +27,87 @@ namespace Assignement1_CARP_COMP2139
 
         }
 
+        // this the method to connect to the database
+        private String GetConnectionString()
+        {
+            
+            return ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        }
+        // This is to insert in the db 
+        private void ExecuteInsert(User member)
+        {
+            // Connect to the database with SqlConnection
+            // call the method GetConnectionString()
+            // take the string with insert command
+            // using the SqlCommand and insert the string in the connection
+            using (SqlConnection sqlConn = new SqlConnection(GetConnectionString()))
+            {
+
+                string sqlPush = @"INSERT INTO userTable   
+                             (User_Name, Email, Address, City, Password, Phone)   
+                              VALUES  
+                             (@username,@Email,@Address,@City,@Password,@Phone)";
+                using (SqlCommand sqlCmd = new SqlCommand(sqlPush, sqlConn))
+                {
+                    sqlCmd.Parameters.AddWithValue("@username", member.user_name);
+                    sqlCmd.Parameters.AddWithValue("@Email", member.Email);
+                    sqlCmd.Parameters.AddWithValue("@Address", member.Address);
+                    sqlCmd.Parameters.AddWithValue("@City", member.City);
+                    sqlCmd.Parameters.AddWithValue("@Password", member.password);
+                    sqlCmd.Parameters.AddWithValue("@Phone", member.phone);
+                 
+
+                    sqlConn.Open();
+                    sqlCmd.CommandType = System.Data.CommandType.Text;
+                    sqlCmd.ExecuteNonQuery();
+                }
+            }
+        }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Server.Transfer("Successful.aspx");
+
+            if (tbPassword.Text == tbConfirmPassword.Text)
+            {
+                //Fill the properties with form valuest
+                User member = new User();
+                member.Email = tbEmail.Text;
+                member.user_name= tbUsername.Text;
+                member.Address = tbAddress.Text;
+                member.phone = tbPhone.Text;
+                member.City = tbCity.Text;
+                member.password = tbPassword.Text;
+       
+                // delete tittle from db.
+                //call the method to execute the insert to the database
+
+                ExecuteInsert(member);
+                Response.Write("Record was successfully added!");
+                ClearControls(Page);
+            }
+            else
+            {
+                Response.Write("Password did not match");
+                tbPassword.Text = "";
+                tbConfirmPassword.Text
+                    = "";
+                tbPassword.Focus();
+            }
+
+        }
+
+        // This methods is for clearing 
+        private static void ClearControls(Control Parent)
+        {
+            if (Parent is TextBox)
+            {
+                (Parent as TextBox).Text = string.Empty;
+            }
+            else
+            {
+                foreach (Control c in Parent.Controls)
+                    ClearControls(c);
+            }
+            // crete the validations to phone and script password
         }
     }
-}
+ }

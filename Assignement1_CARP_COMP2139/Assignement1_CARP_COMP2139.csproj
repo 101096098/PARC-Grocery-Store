@@ -66,13 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Dairy.mdf" />
-    <Content Include="App_Data\Dairy_log.ldf">
-      <DependentUpon>Dairy.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\PARC.mdf" />
-    <Content Include="App_Data\PARC_log.ldf">
-      <DependentUpon>PARC.mdf</DependentUpon>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="Catalogue.aspx" />
     <Content Include="Css\Cart.css" />
@@ -138,6 +134,7 @@
     <Content Include="Home.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\user.cs" />
     <Compile Include="Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

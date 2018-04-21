@@ -31,7 +31,7 @@ button:hover {
 }
         .auto-style9 {
             width: 616px;
-            height: 525px;
+            height: auto;
         }
         .auto-style11 {
             height: 75px;
@@ -74,6 +74,20 @@ button:hover {
         .auto-style22 {
             text-decoration: underline;
         }
+        .auto-style23 {
+            width: 282px;
+            height: 17px;
+        }
+        .auto-style24 {
+            height: 17px;
+        }
+        .auto-style25 {
+            width: 282px;
+            height: 6px;
+        }
+        .auto-style26 {
+            height: 6px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -92,9 +106,9 @@ button:hover {
                 </td>
                 <td class="auto-style11">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbUsername" Display="Dynamic" ErrorMessage="This field is required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbUsername" Display="Dynamic" ErrorMessage="This field is required" ForeColor="Red"></asp:RequiredFieldValidator>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tbUsername" Display="Dynamic" ErrorMessage="Only numbers and letters, begin with a letter" ValidationExpression="^[a-zA-Z][a-zA-Z0-9_.-]*$"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tbUsername" Display="Dynamic" ErrorMessage="Only numbers and letters, begin with a letter" ValidationExpression="^[a-zA-Z][a-zA-Z0-9_.-]*$" ForeColor="Red"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -109,10 +123,10 @@ button:hover {
                 </td>
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbEmail" Display="Dynamic" ErrorMessage="This field is required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbEmail" Display="Dynamic" ErrorMessage="This field is required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
-            <tr>
+             <tr>
                 <td class="auto-style18">
                     Password</td>
                 <td class="auto-style19">
@@ -124,13 +138,109 @@ button:hover {
                 </td>
                 <td class="auto-style17">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tbPassword" Display="Dynamic" ErrorMessage="This field is required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="tbPassword" Display="Dynamic" ErrorMessage="This field is required" ForeColor="Red"></asp:RequiredFieldValidator>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbPassword" Display="Dynamic" ErrorMessage="8-16 characters, starts with a letter, has at least one number and symbol" ValidationExpression="^[A-Za-z](?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&amp;])[A-Za-z\d$@$!%*?&amp;]{8,16}"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="tbPassword" Display="Dynamic" ErrorMessage="8-16 characters, starts with a letter, has at least one number and symbol" ValidationExpression="^[A-Za-z](?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&amp;])[A-Za-z\d$@$!%*?&amp;]{8,16}" ForeColor="Red"></asp:RegularExpressionValidator>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style18">
+                    Confirm Password</td>
+                <td class="auto-style19">
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style16">
+                    
+                    <asp:TextBox ID="tbConfirmPassword" runat="server"></asp:TextBox>
+                    
+                </td>
+                <td class="auto-style17">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="tbPassword" ControlToValidate="tbConfirmPassword" Display="Dynamic" ErrorMessage="Mismatch Password" ForeColor="Red"></asp:CompareValidator>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                </td>
+            </tr>
+           
+            <tr>
+                <td class="auto-style23">
+                    Address </td>
+                <td class="auto-style24"> </td>
+                <td class="auto-style24">
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style16">
+                    <asp:TextBox ID="tbAddress" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style17">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style25">
+                    City</td>
+                <td class="auto-style26">
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style16">
+                    <asp:TextBox ID="tbCity" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style17">
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [userTable] WHERE [user_id] = @original_user_id AND [User Name] = @original_User_Name AND [Email] = @original_Email AND (([Address] = @original_Address) OR ([Address] IS NULL AND @original_Address IS NULL)) AND (([City] = @original_City) OR ([City] IS NULL AND @original_City IS NULL)) AND [Password] = @original_Password AND (([Phone] = @original_Phone) OR ([Phone] IS NULL AND @original_Phone IS NULL))" InsertCommand="INSERT INTO [userTable] ([user_id], [User Name], [Email], [Address], [City], [Password], [Phone]) VALUES (@user_id, @User_Name, @Email, @Address, @City, @Password, @Phone)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [userTable]" UpdateCommand="UPDATE [userTable] SET [User Name] = @User_Name, [Email] = @Email, [Address] = @Address, [City] = @City, [Password] = @Password, [Phone] = @Phone WHERE [user_id] = @original_user_id AND [User Name] = @original_User_Name AND [Email] = @original_Email AND (([Address] = @original_Address) OR ([Address] IS NULL AND @original_Address IS NULL)) AND (([City] = @original_City) OR ([City] IS NULL AND @original_City IS NULL)) AND [Password] = @original_Password AND (([Phone] = @original_Phone) OR ([Phone] IS NULL AND @original_Phone IS NULL))">
+                        <DeleteParameters>
+                            <asp:Parameter Name="original_user_id" Type="Int32" />
+                            <asp:Parameter Name="original_User_Name" Type="String" />
+                            <asp:Parameter Name="original_Email" Type="String" />
+                            <asp:Parameter Name="original_Address" Type="String" />
+                            <asp:Parameter Name="original_City" Type="String" />
+                            <asp:Parameter Name="original_Password" Type="String" />
+                            <asp:Parameter Name="original_Phone" Type="String" />
+                        </DeleteParameters>
+                        <InsertParameters>
+                            <asp:Parameter Name="user_id" Type="Int32" />
+                            <asp:Parameter Name="User_Name" Type="String" />
+                            <asp:Parameter Name="Email" Type="String" />
+                            <asp:Parameter Name="Address" Type="String" />
+                            <asp:Parameter Name="City" Type="String" />
+                            <asp:Parameter Name="Password" Type="String" />
+                            <asp:Parameter Name="Phone" Type="String" />
+                        </InsertParameters>
+                        <UpdateParameters>
+                            <asp:Parameter Name="User_Name" Type="String" />
+                            <asp:Parameter Name="Email" Type="String" />
+                            <asp:Parameter Name="Address" Type="String" />
+                            <asp:Parameter Name="City" Type="String" />
+                            <asp:Parameter Name="Password" Type="String" />
+                            <asp:Parameter Name="Phone" Type="String" />
+                            <asp:Parameter Name="original_user_id" Type="Int32" />
+                            <asp:Parameter Name="original_User_Name" Type="String" />
+                            <asp:Parameter Name="original_Email" Type="String" />
+                            <asp:Parameter Name="original_Address" Type="String" />
+                            <asp:Parameter Name="original_City" Type="String" />
+                            <asp:Parameter Name="original_Password" Type="String" />
+                            <asp:Parameter Name="original_Phone" Type="String" />
+                        </UpdateParameters>
+                    </asp:SqlDataSource>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style18">
+                    Phone</td>
+                <td class="auto-style19">
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style18">
+                    <asp:TextBox ID="tbPhone" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style19">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="tbPhone" Display="Dynamic" ErrorMessage="phone number is not complete or correct" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" ForeColor="Red"></asp:RegularExpressionValidator>
                 </td>
             </tr>
         </table>
-        <asp:Button ID="Button1" runat="server" CssClass="auto-style14" Text="Register Account" Width="148px" OnClick="Button1_Click" />
+        <asp:Button ID="tbRegister" runat="server" CssClass="auto-style14" Text="Register Account" Width="148px" OnClick="Button1_Click" />
         </div>
 
 
