@@ -83,7 +83,7 @@ namespace Assignement1_CARP_COMP2139
         {
             if (IsValid)
             {
-                User member = new App_Code.User();
+                User member = new User();
 
                 member.Email = txtUsername.Text;
                 member.password = txtPassword.Text;
