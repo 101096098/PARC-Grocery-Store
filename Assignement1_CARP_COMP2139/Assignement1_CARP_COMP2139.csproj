@@ -70,11 +70,12 @@
     <Content Include="App_Data\CARP_log.ldf">
       <DependentUpon>CARP.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
+    <Content Include="App_Data\PARC.mdf" />
     <Content Include="Catalogue.aspx" />
+    <Content Include="GridViewDairy.aspx" />
+    <Content Include="GridviewVegetable.aspx" />
+    <Content Include="GridViewMeat.aspx" />
+    <Content Include="GridViewBakery.aspx" />
     <Content Include="Css\Cart.css" />
     <Content Include="FeedBackSubmitted.aspx" />
     <Content Include="Images\bakey\bagel.jpg" />
@@ -131,6 +132,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="ProductsSite.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Css\style.css" />
@@ -152,6 +156,34 @@
     </Compile>
     <Compile Include="Catalogue.aspx.designer.cs">
       <DependentUpon>Catalogue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewDairy.aspx.cs">
+      <DependentUpon>GridViewDairy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridViewDairy.aspx.designer.cs">
+      <DependentUpon>GridViewDairy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridviewVegetable.aspx.cs">
+      <DependentUpon>GridviewVegetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridviewVegetable.aspx.designer.cs">
+      <DependentUpon>GridviewVegetable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewMeat.aspx.cs">
+      <DependentUpon>GridViewMeat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridViewMeat.aspx.designer.cs">
+      <DependentUpon>GridViewMeat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewBakery.aspx.cs">
+      <DependentUpon>GridViewBakery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridViewBakery.aspx.designer.cs">
+      <DependentUpon>GridViewBakery.aspx</DependentUpon>
     </Compile>
     <Compile Include="FeedBackSubmitted.aspx.cs">
       <DependentUpon>FeedBackSubmitted.aspx</DependentUpon>
