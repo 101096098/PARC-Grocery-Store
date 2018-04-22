@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-  <siteMapNode url="/GridViewBakery.aspx" title="Bakery"  description="Bakery">
-    <siteMapNode url="/GridViewDairy.aspx" title="Dairy"  description="Dairy" />
-    <siteMapNode url="/GridViewMeat.aspx" title="Meat"  description="Meat" />
-    <siteMapNode url="/GridviewVegetable.aspx" title="Vegetable"  description="Vegetable" />
-  </siteMapNode>
-</siteMap>
