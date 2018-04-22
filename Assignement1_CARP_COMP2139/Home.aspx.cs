@@ -51,5 +51,15 @@ namespace Assignement1_CARP_COMP2139
         {
             MultiView1.ActiveViewIndex = 2;
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void GridView1_RowUpdated(object sender, GridViewUpdatedEventArgs e)
+        {
+
+        }
     }
 }
