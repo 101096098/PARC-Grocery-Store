@@ -66,9 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
+    <Content Include="App_Data\CARP.mdf" />
+    <Content Include="App_Data\CARP_log.ldf">
+      <DependentUpon>CARP.mdf</DependentUpon>
     </Content>
     <Content Include="Catalogue.aspx" />
     <Content Include="Css\Cart.css" />

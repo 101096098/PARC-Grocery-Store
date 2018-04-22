@@ -76,20 +76,6 @@
     <br />
     
     <br />
-</div>   
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Bakery]"></asp:SqlDataSource>
-    <br />
-
-
-    <!--test-->
-
-    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
-        <Columns>
-            <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
-            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-            <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
-            <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
-        </Columns>
-    </asp:GridView>
-
+</div>
+    
     </asp:Content>
