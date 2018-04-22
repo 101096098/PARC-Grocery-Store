@@ -10,8 +10,10 @@ using System.Data.SqlClient;
 
 namespace Assignement1_CARP_COMP2139
 {
+    
     public partial class WebForm7 : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -55,11 +57,19 @@ namespace Assignement1_CARP_COMP2139
                     sqlCmd.Parameters.AddWithValue("@City", member.City);
                     sqlCmd.Parameters.AddWithValue("@Password", member.password);
                     sqlCmd.Parameters.AddWithValue("@Phone", member.phone);
-                 
 
-                    sqlConn.Open();
-                    sqlCmd.CommandType = System.Data.CommandType.Text;
-                    sqlCmd.ExecuteNonQuery();
+                    try
+                    {
+                        sqlConn.Open();
+                        sqlCmd.CommandType = System.Data.CommandType.Text;
+                        sqlCmd.ExecuteNonQuery();
+                    }
+                    catch(System.Data.SqlClient.SqlException exception)
+                    {
+                        registerError.Text = "We're Sorry but it appears your email address already exists in our system";
+                        String msg = "Record was not successfully added!";
+                        Response.Write("<script>alert('" + msg + "')</script>");
+                    }
                 }
             }
         }
@@ -76,17 +86,19 @@ namespace Assignement1_CARP_COMP2139
                 member.phone = tbPhone.Text;
                 member.City = tbCity.Text;
                 member.password = tbPassword.Text;
-       
+
                 // delete tittle from db.
                 //call the method to execute the insert to the database
-
+               
                 ExecuteInsert(member);
-                Response.Write("Record was successfully added!");
+                String msg ="Record was successfully added!";
+                Response.Write("<script>alert('" + msg + "')</script>");
                 ClearControls(Page);
             }
             else
             {
-                Response.Write("Password did not match");
+                String msg = "Password did not match";
+                Response.Write("<script>alert('" + msg + "')</script>");
                 tbPassword.Text = "";
                 tbConfirmPassword.Text
                     = "";

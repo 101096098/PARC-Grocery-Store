@@ -10,7 +10,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
     <div style="margin-left: auto; align-self:center; margin-left: 100px; margin-right: 100px" class="auto-style9">
-    <asp:Panel ID="Panel1" runat="server" Height="325px" Width="830px" Direction="LeftToRight">
+    <asp:Panel ID="Panel1" runat="server" Height="198px" Width="666px" Direction="LeftToRight">
         <h1>Sign in</h1>     
     <table class="auto-style1" >
         <tr>

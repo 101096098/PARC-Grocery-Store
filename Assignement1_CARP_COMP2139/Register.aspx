@@ -38,10 +38,10 @@ button:hover {
         }
         .auto-style12 {
             height: 75px;
-            width: 282px;
+            width: 311px;
         }
         .auto-style13 {
-            width: 282px;
+            width: 311px;
         }
         .auto-style14 {
             margin-left: 39px;
@@ -51,14 +51,14 @@ button:hover {
             height: 357px;
         }
         .auto-style16 {
-            width: 282px;
+            width: 311px;
             height: 77px;
         }
         .auto-style17 {
             height: 77px;
         }
         .auto-style18 {
-            width: 282px;
+            width: 311px;
             height: 7px;
         }
         .auto-style19 {
@@ -66,7 +66,7 @@ button:hover {
         }
         .auto-style20 {
             height: 11px;
-            width: 282px;
+            width: 311px;
         }
         .auto-style21 {
             height: 11px;
@@ -75,14 +75,14 @@ button:hover {
             text-decoration: underline;
         }
         .auto-style23 {
-            width: 282px;
+            width: 311px;
             height: 17px;
         }
         .auto-style24 {
             height: 17px;
         }
         .auto-style25 {
-            width: 282px;
+            width: 311px;
             height: 6px;
         }
         .auto-style26 {
@@ -235,11 +235,13 @@ button:hover {
                     <asp:TextBox ID="tbPhone" runat="server"></asp:TextBox>
                 </td>
                 <td class="auto-style19">
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="tbPhone" Display="Dynamic" ErrorMessage="phone number is not complete or correct" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" ForeColor="Red"></asp:RegularExpressionValidator>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="tbPhone" Display="Dynamic" ErrorMessage="Phone number must be in format of ###-###-####" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" ForeColor="Red"></asp:RegularExpressionValidator>
                 </td>
             </tr>
         </table>
         <asp:Button ID="tbRegister" runat="server" CssClass="auto-style14" Text="Register Account" Width="148px" OnClick="Button1_Click" />
+        <asp:Label ID="registerError" runat="server"></asp:Label>
         </div>
 
 
