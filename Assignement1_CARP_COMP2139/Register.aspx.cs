@@ -33,7 +33,7 @@ namespace Assignement1_CARP_COMP2139
         private String GetConnectionString()
         {
             
-            return ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            return ConfigurationManager.ConnectionStrings["ConnectionString2"].ConnectionString;
         }
         // This is to insert in the db 
         private void ExecuteInsert(User member)
@@ -51,23 +51,29 @@ namespace Assignement1_CARP_COMP2139
                              (@username,@Email,@Address,@City,@Password,@Phone)";
                 using (SqlCommand sqlCmd = new SqlCommand(sqlPush, sqlConn))
                 {
-                    sqlCmd.Parameters.AddWithValue("@username", member.user_name);
-                    sqlCmd.Parameters.AddWithValue("@Email", member.Email);
-                    sqlCmd.Parameters.AddWithValue("@Address", member.Address);
-                    sqlCmd.Parameters.AddWithValue("@City", member.City);
-                    sqlCmd.Parameters.AddWithValue("@Password", member.password);
-                    sqlCmd.Parameters.AddWithValue("@Phone", member.phone);
+                    
 
                     try
                     {
+                        sqlCmd.Parameters.AddWithValue("@username", member.user_name);
+                        sqlCmd.Parameters.AddWithValue("@Email", member.Email);
+                        sqlCmd.Parameters.AddWithValue("@Address", member.Address);
+                        sqlCmd.Parameters.AddWithValue("@City", member.City);
+                        sqlCmd.Parameters.AddWithValue("@Password", member.password);
+                        sqlCmd.Parameters.AddWithValue("@Phone", member.phone);
+
                         sqlConn.Open();
                         sqlCmd.CommandType = System.Data.CommandType.Text;
                         sqlCmd.ExecuteNonQuery();
+
+                        String msg = "Account was successfully !";
+                        Response.Write("<script>alert('" + msg + "')</script>");
+                        ClearControls(Page);
                     }
                     catch(System.Data.SqlClient.SqlException exception)
                     {
-                        registerError.Text = "We're Sorry but it appears your email address already exists in our system";
-                        String msg = "Record was not successfully added!";
+                        registerError.Text = "This email is already linked to an account";
+                        String msg = "Account not created!";
                         Response.Write("<script>alert('" + msg + "')</script>");
                     }
                 }
@@ -93,9 +99,7 @@ namespace Assignement1_CARP_COMP2139
                 ExecuteInsert(member);
 
 
-                String msg ="Record was successfully added!";
-                Response.Write("<script>alert('" + msg + "')</script>");
-                ClearControls(Page);
+                
             }
             else
             {

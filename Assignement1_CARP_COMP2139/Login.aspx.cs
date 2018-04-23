@@ -29,7 +29,7 @@ namespace Assignement1_CARP_COMP2139
         // this the method to connect to the database for the login page
         private String GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            return ConfigurationManager.ConnectionStrings["ConnectionString2"].ConnectionString;
         }
 
         // This method is for the query of the login page
