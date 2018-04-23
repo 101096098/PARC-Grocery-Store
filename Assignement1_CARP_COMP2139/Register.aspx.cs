@@ -97,9 +97,6 @@ namespace Assignement1_CARP_COMP2139
                 //call the method to execute the insert to the database
                
                 ExecuteInsert(member);
-
-
-                
             }
             else
             {

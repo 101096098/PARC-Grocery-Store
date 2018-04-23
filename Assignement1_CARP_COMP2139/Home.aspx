@@ -100,13 +100,14 @@
                     <asp:Parameter Name="original_Quantity" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="SqlDataSource1" GridLines="Vertical" Height="104px" Width="562px" CssClass="auto-style10" OnRowUpdated="GridView1_RowUpdated" >
+            <asp:Label ID="errorLabel" runat="server"></asp:Label>
+            <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="SqlDataSource1" GridLines="Vertical" Height="104px" Width="562px" CssClass="auto-style10" OnRowUpdated="GridView1_RowUpdated" OnRowDeleted="GridView1_RowDeleted" >
                 <AlternatingRowStyle BackColor="Gainsboro" />
                 <Columns>
                     <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
                     <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                     <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
-                    <asp:CommandField ButtonType="Button" ShowEditButton="True" />
+                    <asp:CommandField ButtonType="Button" ShowEditButton="True" ShowDeleteButton="True" />
                 </Columns>
                 <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                 <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
@@ -144,13 +145,14 @@
                     <asp:Parameter Name="original_Quantity" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:GridView ID="GridView2" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" CssClass="auto-style9" DataKeyNames="Id" DataSourceID="SqlDataSource2" GridLines="Vertical" Height="112px" Width="559px">
+            <asp:Label ID="errorLabel2" runat="server"></asp:Label>
+            <asp:GridView ID="GridView2" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" CssClass="auto-style9" DataKeyNames="Id" DataSourceID="SqlDataSource2" GridLines="Vertical" Height="112px" Width="559px" OnRowDeleted="GridView2_RowDeleted" OnRowUpdated="GridView2_RowUpdated">
                 <AlternatingRowStyle BackColor="#DCDCDC" />
                 <Columns>
                     <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
                     <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                     <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
-                    <asp:CommandField ButtonType="Button" ShowEditButton="True" />
+                    <asp:CommandField ButtonType="Button" ShowEditButton="True" ShowDeleteButton="True" />
                 </Columns>
                 <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                 <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
@@ -189,13 +191,14 @@
                     <asp:Parameter Name="original_Quantity" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:GridView ID="GridView3" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="SqlDataSource3" GridLines="Vertical" Height="112px" Width="559px">
+            <asp:Label ID="errorLabel3" runat="server"></asp:Label>
+            <asp:GridView ID="GridView3" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="SqlDataSource3" GridLines="Vertical" Height="112px" Width="559px" OnRowDeleted="GridView3_RowDeleted" OnRowUpdated="GridView3_RowUpdated">
                 <AlternatingRowStyle BackColor="#DCDCDC" />
                 <Columns>
                     <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
                     <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                     <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
-                    <asp:CommandField ButtonType="Button" ShowEditButton="True" />
+                    <asp:CommandField ButtonType="Button" ShowEditButton="True" ShowDeleteButton="True" />
                 </Columns>
                 <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                 <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
@@ -234,13 +237,14 @@
                     <asp:Parameter Name="original_Quantity" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:GridView ID="GridView4" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="SqlDataSource4" GridLines="Vertical" Height="112px" Width="559px">
+            <asp:Label ID="errorLabel4" runat="server" Text="Label"></asp:Label>
+            <asp:GridView ID="GridView4" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="SqlDataSource4" GridLines="Vertical" Height="112px" Width="559px" OnRowDeleted="GridView4_RowDeleted" OnRowUpdated="GridView4_RowUpdated">
                 <AlternatingRowStyle BackColor="Gainsboro" />
                 <Columns>
                     <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
                     <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                     <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
-                    <asp:CommandField ButtonType="Button" ShowEditButton="True" />
+                    <asp:CommandField ButtonType="Button" ShowEditButton="True" ShowDeleteButton="True" />
                 </Columns>
                 <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                 <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
